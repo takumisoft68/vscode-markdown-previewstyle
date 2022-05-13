@@ -1,0 +1,64 @@
+{
+    "name": "markdown-previewstyle",
+    "publisher": "TakumiI",
+    "version": "0.0.1",
+    "displayName": "Markdown Preview Style (Beta)",
+    "description": "Add style to markdown preview to make it good.",
+    "keywords": [
+        "markdown",
+        "preview",
+        "style"
+    ],
+    "engines": {
+        "vscode": "^1.54.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "main": "src/extension.js",
+    "browser": "src/extension.js",
+    "activationEvents": [],
+    "contributes": {
+        "markdown.markdownItPlugins": true,
+        "markdown.previewStyles": [
+            "./dist/previewstyle.css"
+        ],
+        "configuration": [
+            {
+                "title": "Markdown Preview Style",
+                "properties": {
+                    "markdown-previewstyle.colorTheme": {
+                        "type": "string",
+                        "description": "Style for the preview.",
+                        "enum": [
+                            "auto",
+                            "dark",
+                            "light"
+                        ],
+                        "enumDescriptions": [
+                            "Sync to the Workbench: Color Theme.",
+                            "Always dark theme.",
+                            "Always light theme."
+                        ],
+                        "default": "auto"
+                    }
+                }
+            }
+        ]
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.54.0",
+        "@types/glob": "^7.2.0",
+        "@types/mocha": "^9.1.1",
+        "@types/node": "14.x",
+        "eslint": "^8.14.0",
+        "glob": "^8.0.1",
+        "mocha": "^9.2.2",
+        "typescript": "^4.6.4",
+        "@vscode/test-electron": "^2.1.3"
+    }
+}
