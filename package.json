@@ -1,14 +1,18 @@
 {
     "name": "markdown-previewstyle",
     "publisher": "TakumiI",
-    "version": "0.0.1",
     "displayName": "Markdown Preview Style (Beta)",
     "description": "Add style to markdown preview to make it good.",
+    "version": "0.0.1",
     "keywords": [
         "markdown",
         "preview",
         "style"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/takumisoft68/vscode-markdown-previewstyle"
+    },
     "engines": {
         "vscode": "^1.54.0"
     },

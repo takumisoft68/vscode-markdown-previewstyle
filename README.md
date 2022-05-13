@@ -4,8 +4,8 @@ Add style to markdown preview to make it good.
 
 ## 1. Features
 
-- Left : markdown preview without this extension
-- Right : markdown preview with this extension
+- Left : without this extension
+- Right : with this extension
 
 ![preview](images/preview.png)
 
